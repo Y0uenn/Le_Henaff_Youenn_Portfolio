@@ -10998,7 +10998,7 @@ header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 22%;
   }
 }
 #portfolio .portfolio-item {
@@ -11328,4 +11328,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.masthead {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.masthead-heading {
+  position: absolute;
+  top: 20vh;
+  right: 20vh;
+  text-align: right;
 }
