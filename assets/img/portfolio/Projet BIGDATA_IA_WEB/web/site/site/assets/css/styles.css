@@ -1,0 +1,378 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/fond_arbre.png') no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+/*barre du header*/
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #47694C;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+    opacity: 0.8;
+}
+
+.navbar a.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    background-color: #47694C;
+    width: 14vw;
+    height: 3vw; /* Same as width for a square */
+    text-align: center;
+    font-size: 2vw; /* Responsive font size */
+    line-height: 1.2; /* Adjust line height for better alignment */
+    padding: 0.5vw; /* Padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   
+    
+}
+/* Change the background color on hover */
+.navbar a.nav-button:hover {
+    background-color: orange;
+}
+
+.image-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 5vw; /* Same height as buttons */
+    
+}
+
+.image-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-block {
+    background-color: #47694C;
+    background-size: 600% 600%;
+    padding: 2vh 2vw;
+    border-radius: 8px;
+    width: 60vw;
+    max-width: 90vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+ 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text-block h2 {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+    color: black;
+}
+
+.text-block p {
+    font-size: 2vh;
+    margin: 0;
+    color: black;
+   
+}
+
+
+
+
+
+
+   /* Style pour le bloc */
+   #block {
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+/*ligne avec bouton*/
+
+.block_bouton {
+    display: flex;
+    align-items: center;
+    
+    
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vw;
+
+    
+    
+}
+
+.block_bouton a.block_bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    background-color:  #47694C;
+    width: 10vw;
+    height: 8vh; /* Same as width for a square */
+    text-align: center;
+    font-size: 1.2vw; /* Responsive font size */
+    line-height: 1.2; /* Adjust line height for better alignment */
+    padding: 0.5vw; /* Padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+    opacity: 0.9;
+    
+}
+/* Change the background color on hover */
+.block_bouton a.block_bouton:hover {
+    background-color: orange;
+}
+
+
+.background-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.background-image .content {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #485786;
+    color: white;
+}
+
+
+
+.extra-content {
+    background-color: #ddd;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 5vw 5vw;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 40vw; /* Responsive width */
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+input, textarea {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+   
+}
+
+button {
+    display: block; /* Définit le bouton en tant qu'élément de bloc */
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 2vh;
+    transition: background-color 0.3s;
+    width: 90%;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.json-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:80vw;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+.content-container {
+    max-width: 50rem; /* 800px */
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 0.5rem; /* 8px */
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+.image-block {
+    
+    padding: 5px;
+    width: 60vw; /* Ajuster la largeur selon vos besoins */
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+}
+
+/* Style pour l'image */
+.image-block img {
+    width:100%;
+    height: auto;
+}
+.image-container {
+    margin: 1.25rem 0; /* 20px */
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-container {
+    margin: 5rem 2rem; /* 20px */
+    padding: 0.625rem; /* 10px */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem; /* 8px */
+}
+
+.footer {
+    background-color: #47694C;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.footer img {
+    display: block;
+    margin: 10px auto;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+ 
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+label {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+
+
+input[type="radio"]:checked + label:before {
+    background-color: #000;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
