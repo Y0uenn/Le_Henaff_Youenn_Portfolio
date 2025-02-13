@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visualisation</title>
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/autocomplete.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="assets/js/request.js"></script>
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/autocomplete.js"></script>
+	<script src="assets/js/accueil.js" defer></script>
+	<script src="assets/js/visualisation.js" defer></script>
+</head>
+<body>
+	<header class="navbar">
+		<div>
+			<a href="index.html" class="nav-button">Accueil</a>
+		</div>
+		<div id="add_arbre">
+			<a href="ajout.html" class="nav-button">Ajout</a>
+		</div>
+		<div>
+			<a href="../../../../../../../index.html" class="nav-button">Retour Portfolio</a>
+		</div>
+		
+		<div class="image-logo">
+			<img src="assets/img/logo_Isen.PNG" alt="ISEN">
+		</div>
+	</header>
+
+	<main class="background-image">
+		<div class="json-container">
+			<form id="filtres" autocomplete="off"></form>
+			
+			<table id="jsonTable">
+				<thead>
+					<tr id="tableHeader"></tr>
+				</thead>
+				<tbody id="tableBody"></tbody>
+			</table>
+			<form id="pages" autocomplete="off"></form>
+		</div>
+
+		<div class="block_bouton">
+			<div class="button-container">
+				<a href="cluster.html" class="block_bouton">Prédire les clusters</a>
+			</div>
+			<div class="button-container" id="predi_age">
+				<a href="predi.html" class="block_bouton">Prédire l'âge</a>
+			</div>
+			<div class="button-container" id="predi_dera">
+				<a href="predi_déra.html" class="block_bouton">Prédire le déracinement</a>
+			</div>
+			<div class="button-container" id="sup_arbre">
+				<a href="" class="block_bouton">Supprimer</a>
+			</div>
+			<div class="button-container" id="mod_arbre">
+				<a href="" class="block_bouton">Modifier</a>
+			</div>
+		</div>
+
+		<div class="image-block">
+			<div id="map"></div>
+		</div>
+	</main>
+</body>
+</html>

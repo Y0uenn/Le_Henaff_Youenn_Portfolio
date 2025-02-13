@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajout</title>
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/autocomplete.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="assets/js/request.js"></script>
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/autocomplete.js"></script>
+	<script src="assets/js/accueil.js" defer></script>
+	<script src="assets/js/ajout_arbre.js" defer></script>
+</head>
+<body>
+	<div class="navbar">
+		<div>
+			<a href="index.html" class="nav-button">Accueil</a>
+		</div>
+		<div>
+			<a href="visualisation.html" class="nav-button">Visualisation</a>
+		</div>
+        <div>
+			<a href="../../../../../../../index.html" class="nav-button">Retour Portfolio</a>
+		</div>
+		<div class="image-logo">
+			<img src="assets/img/logo_Isen.PNG" alt="ISEN">
+		</div>
+	</div>
+
+	<div class="background-image">
+		<div class="form-container">
+            <form>
+                <label for="text">Longitude:</label>
+                <input type="text" id="longitude" name="longitude" required>
+    
+                <label for="text">Latitude:</label>
+                <input type="text" id="latitude" name="latitude" required>
+
+                <label for="text">Espèce:</label>
+                <input type="text" id="espèce" name="espèce" required>
+
+                <label for="text">Hauteur totale:</label>
+                <input type="text" id="haut_tot" name="haut_tot" required>
+
+                <label for="text">Hauteur du tronc:</label>
+                <input type="text" id="haut_tronc" name="haut_tronc" required>
+
+                <label for="text">Diamètre du tronc:</label>
+                <input type="text" id="tronc_diam" name="tronc_diam" required>
+
+                <label for="text">Etat de l'arbre:</label>
+                <input type="text" id="fk_arb_etat" name="fk_arb_etat" placeholder="en place, supprimé..." required>
+
+                <label for="text">Stade de développement:</label>
+                <input type="text" id="fk_stadedev" name="fk_stadedev" placeholder="jeune, adulte..." required>
+
+                <label for="text">Type de port:</label>
+                <input type="text" id="fk_port" name="fk_port" placeholder="couronne, libre..." required>
+
+                <label for="text">Type de pied:</label>
+                <input type="text" id="fk_pied" name="fk_pied"placeholder="terre, gazon..." required>
+
+                <label for="text">Remarquable:</label>
+                <input type="text" id="fk_remarquable" name="fk_remmarquable" required>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+	</div>
+</body>
+</html>
