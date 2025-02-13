@@ -11506,7 +11506,7 @@ p {
   height: 100vh; /* Prendre toute la hauteur de la fenêtre */
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/mer.jpg"); /* Utiliser une seule image */
+  background-image: url("../assets/img/mer.png"); /* Utiliser une seule image */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center; /* Centrer l'image */
